@@ -3,17 +3,14 @@
 
 AUTHOR = u'Adam Ginsburg'
 SITENAME = u'BGPS Blog'
-SITEURL = ''
+SITEURL = u'http://bgps.github.com'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Denver'
 
 DEFAULT_LANG = u'en'
 
 # Blogroll
-LINKS =  (('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-          ('Python.org', 'http://python.org'),
-          ('Jinja2', 'http://jinja.pocoo.org'),
-          ('You can modify those links in your config file', '#'),)
+LINKS =  ()
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
