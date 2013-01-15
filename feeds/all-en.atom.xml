@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>BGPS Blog</title><link href="/" rel="alternate"></link><link href="http://bgps.github.com//feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2013-01-15T11:23:00-07:00</updated><entry><title>Simulations - Towards a Spatial Transfer Function</title><link href="/simulations-towards-a-spatial-transfer-function.html" rel="alternate"></link><updated>2013-01-15T11:23:00-07:00</updated><author><name>Adam Ginsburg</name></author><id>tag:,2013-01-15:simulations-towards-a-spatial-transfer-function.html</id><summary type="html">&lt;p&gt;The &lt;span class="math"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>BGPS Blog</title><link href="http://bgps.github.com/" rel="alternate"></link><link href="http://bgps.github.com//feeds/all-en.atom.xml" rel="self"></link><id>http://bgps.github.com/</id><updated>2013-01-15T11:23:00-07:00</updated><entry><title>Simulations - Towards a Spatial Transfer Function</title><link href="http://bgps.github.com/simulations-towards-a-spatial-transfer-function.html" rel="alternate"></link><updated>2013-01-15T11:23:00-07:00</updated><author><name>Adam Ginsburg</name></author><id>tag:bgps.github.com,2013-01-15:simulations-towards-a-spatial-transfer-function.html</id><summary type="html">&lt;p&gt;The &lt;span class="math"&gt;
 \(alpha=-1\)&lt;/span&gt;
  power law is the only one that seems to have even mildly
 reasonable recovery; the others recover &amp;lt;50% of the power at &lt;em&gt;any&lt;/em&gt; scale.&lt;/p&gt;
@@ -7,10 +7,13 @@ reasonable recovery; the others recover &amp;lt;50% of the power at &lt;em&gt;an
 first with a reasonable amount of recovery, and that did have a power of -1.
 So it looks like I knew about this and just got the #'s wrong.&lt;/p&gt;
 &lt;p&gt;This is approximately what an STF sim should look like:&lt;/p&gt;
-&lt;img alt="/Volumes/disk3/adam_work/artificial_sims/exp21_spatial_transfer_function/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" src="/Volumes/disk3/adam_work/artificial_sims/exp21_spatial_transfer_function/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" style="width: 800px;" /&gt;
+&lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp21_spatial_transfer_function/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png --&gt;
+&lt;img alt="static/images/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" src="static/images/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" style="width: 800px;" /&gt;
 &lt;p&gt;I'm still not entirely clear why there is an excess power loss at the angular scales the BGPS should
 recover for power laws steeper than about 1.  The power spectra show major loss:&lt;/p&gt;
-&lt;img alt="/Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" src="/Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" style="width: 800px;" /&gt;
+&lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png --&gt;
+&lt;img alt="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" src="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" style="width: 800px;" /&gt;
 &lt;p&gt;and in the comparison images, it's clear that there is missing information, but it's not clear on what scales&lt;/p&gt;
-&lt;img alt="/Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" src="/Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" style="width: 800px;" /&gt;
+&lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png --&gt;
+&lt;img alt="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" src="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" style="width: 800px;" /&gt;
 </summary><category term="simulation"></category><category term="stf"></category></entry></feed>
