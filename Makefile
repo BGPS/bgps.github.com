@@ -72,4 +72,7 @@ ftp_upload: publish
 github: publish
 	ghp-import -p -b master -r origin $(OUTPUTDIR)
 
+images: 
+	python get_images.py content/ --verbose --change-restfile
+
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload github

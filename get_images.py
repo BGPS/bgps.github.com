@@ -26,15 +26,23 @@ def replace_image_paths(restfile, newpath='content/images/', change_restfile=Fal
                 if verbose:
                     print impath
                 images.append(impath)
+                linkpath = "{image_path}/{filename}".format(
+                            image_path=image_path.strip("/"),
+                            filename=os.path.split(impath)[1])
+
                 if os.path.exists(impath):
-                    shutil.copy(impath,newpath)
-                    if leave_fullpath:
-                        newlines.append(".. {0}\n".format(impath))
-                    newlines.append(".. image:: {image_path}/{filename}\n".format(
-                        image_path=image_path.strip("/"),
-                        filename=os.path.split(impath)[1]))
+                    if os.path.exists(newpath+os.path.split(impath)[1]):
+                        newlines.append(line)
+                    else:
+                        shutil.copy(impath,newpath)
+                        if leave_fullpath:
+                            newlines.append(".. {0}\n".format(impath))
+                        newlines.append(".. image:: {linkpath}\n".format(
+                            linkpath=linkpath))
                 else:
-                    newlines.append(".. Could not find this image:\n")
+                    if impath != linkpath:
+                        # basically, check to see if it's already right
+                        newlines.append(".. Could not find this image:\n")
                     newlines.append(line)
             else:
                 newlines.append(line)
