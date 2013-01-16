@@ -5,12 +5,15 @@ import argparse
 import glob
 
 def replace_image_paths(restfile, newpath='content/images/', change_restfile=False,
-        leave_fullpath=True, image_path='static/images'):
+        leave_fullpath=True, image_path='static/images', verbose=False):
     """
     Find full paths to images in .rst files, copy them to `newpath`,
     then overwrite the restfile using the new path.
     Can leave the full path as a comment.
     """
+
+    if verbose:
+        print "Replacing images in ",restfile
 
     imre = re.compile("\.\. image:: (.*)")
     with open(restfile,'r') as r:
@@ -20,7 +23,8 @@ def replace_image_paths(restfile, newpath='content/images/', change_restfile=Fal
             search = imre.search(line)
             if search is not None:
                 impath = search.groups()[0]
-                print impath
+                if verbose:
+                    print impath
                 images.append(impath)
                 if os.path.exists(impath):
                     shutil.copy(impath,newpath)
@@ -40,6 +44,9 @@ def replace_image_paths(restfile, newpath='content/images/', change_restfile=Fal
             w.writelines(newlines)
 
 def replace_all(path, suffix='.rst', **kwargs):
+    """
+    Find all files in path with specified suffix and run replace_image_paths on them
+    """
 
     files = glob.glob(path+"/*.rst")
 
@@ -76,16 +83,22 @@ def main():
         help='Path to the static/images/ directory for the blog',
         default='static/images/')
 
+    parser.add_argument('--verbose',dest='verbose',
+        help='Print file names each time they are found?',
+        default=False, action='store_true')
+
     args = parser.parse_args()
     
     if os.path.isdir(args.path[0]):
         replace_all(args.path[0], suffix=args.filesuffix, newpath=args.imagepath,
                 change_restfile=args.change_restfile,
-                leave_fullpath=args.leave_fullpath, image_path=args.image_path)
+                leave_fullpath=args.leave_fullpath, image_path=args.image_path,
+                verbose=args.verbose)
     else:
         replace_image_paths(args.path[0], newpath=args.imagepath,
                 change_restfile=args.change_restfile,
-                leave_fullpath=args.leave_fullpath, image_path=args.image_path)
+                leave_fullpath=args.leave_fullpath, image_path=args.image_path,
+                verbose=args.verbose)
 
 if __name__=="__main__":
     main()
