@@ -77,13 +77,13 @@ def main():
         default='static/images/')
 
     args = parser.parse_args()
-
-    if os.path.isdir(args.path):
-        replace_all(args.path, suffix=args.filesuffix, newpath=args.imagepath,
+    
+    if os.path.isdir(args.path[0]):
+        replace_all(args.path[0], suffix=args.filesuffix, newpath=args.imagepath,
                 change_restfile=args.change_restfile,
                 leave_fullpath=args.leave_fullpath, image_path=args.image_path)
     else:
-        replace_image_paths(args.path, newpath=args.imagepath,
+        replace_image_paths(args.path[0], newpath=args.imagepath,
                 change_restfile=args.change_restfile,
                 leave_fullpath=args.leave_fullpath, image_path=args.image_path)
 
