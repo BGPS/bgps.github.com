@@ -11,8 +11,8 @@ So it looks like I knew about this and just got the #'s wrong.&lt;/p&gt;
 &lt;img alt="static/images/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" src="static/images/exp21_ds2_astrosky_arrang45_atmotest_amp3.2E-02_sky02_seed00_peak001.00_smooth_psds.png" style="width: 800px;" /&gt;
 &lt;p&gt;I'm still not entirely clear why there is an excess power loss at the angular scales the BGPS should
 recover for power laws steeper than about 1.  The power spectra show major loss:&lt;/p&gt;
-&lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png --&gt;
-&lt;img alt="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" src="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_scandir1_psds.png" style="width: 800px;" /&gt;
+&lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_psds.png --&gt;
+&lt;img alt="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_psds.png" src="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_psds.png" style="width: 800px;" /&gt;
 &lt;p&gt;and in the comparison images, it's clear that there is missing information, but it's not clear on what scales&lt;/p&gt;
 &lt;!-- /Volumes/disk3/adam_work/artificial_sims/exp10_spatial_transfer_function/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png --&gt;
 &lt;img alt="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" src="static/images/exp10_ds2_astrosky_arrang45_atmotest_amp1.0E+01_sky03_seed00_peak010.00_smooth_compare.png" style="width: 800px;" /&gt;
