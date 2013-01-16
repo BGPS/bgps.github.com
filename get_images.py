@@ -87,4 +87,5 @@ def main():
                 change_restfile=args.change_restfile,
                 leave_fullpath=args.leave_fullpath, image_path=args.image_path)
 
-
+if __name__=="__main__":
+    main()
